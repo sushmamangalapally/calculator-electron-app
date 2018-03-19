@@ -7,23 +7,30 @@
 }
 
 
-#calculator{
+#calculator {
     width: 430px;
     height: auto;
     padding: 23px;
     background: rgba(72, 226, 193, 0.678);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
 }
 
-span{
+span {
     border: 1px solid lightgrey;
-    padding: 15px;
-    margin: 20px;
+    /* padding: 15px; */
+    /* margin: 20px; */
     background: whitesmoke;
     cursor: pointer;
     /* box-sizing: border-box; */
+    padding: 15px;
 }
 
-.row{
-    margin: 20px;
-    padding: 10px;
+.screen{
+    grid-column: 2 / 5;
+    background: whitesmoke;
+    border: 1px solid lightgrey;
+    font-size: 20px;
+    
 }
